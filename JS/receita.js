@@ -3,7 +3,6 @@ let receita = {};
 let usuario = sessionStorage.getItem('usuario');
 usuario = JSON.parse(usuario);
 
-
 function formatarData(data){
     let dataFormatada = new Date(data),
     dia  = dataFormatada.getDate().toString().padStart(2,'0'),
@@ -58,7 +57,7 @@ function preencherTabela(dados){
         editar.textContent = 'Editar';
         editar.style.fontFamily = "Kalam, cursive";
         editar.style.padding = "3px 30px";
-        editar.style.margin = "10px 0";
+        editar.style.marginRight = "4px";
         editar.style.border = "0.5px solid #112D4E";
         editar.setAttribute('onclick', 'editarReceita('+JSON.stringify(dados[i])+')');
         td_acoes.appendChild(editar);
@@ -67,7 +66,6 @@ function preencherTabela(dados){
         excluir.textContent = 'Excluir';
         editar.style.fontFamily = "Kalam, cursive";
         editar.style.padding = "3px 30px";
-        editar.style.margin = "10px 0";
         editar.style.border = "0.5px solid #112D4E";
         excluir.setAttribute('onclick', 'excluirReceita('+JSON.stringify(dados[i])+')');
         td_acoes.appendChild(excluir);  
@@ -96,3 +94,8 @@ async function excluirReceita(dados){
         alert("Houve um problema na exclusão da receita.");
     }
 }
+
+function limparTabela(){
+    let tbody = document.getElementById('tbody');
+    tbody.innerHTML = '';
+  }
