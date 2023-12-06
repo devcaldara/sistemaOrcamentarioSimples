@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  background: var(--cor-fundo);
+
+  --fonte-titulo: "Lato", sans-serif;
+  --fonte-texto: "Kalam", cursive;
+  
+  --cor-principal: #112D4E;
+  --cor-secundaria: #3F72AF;
+  --cor-tercearia: #DBE2EF;
+  --cor-fonte: #F9F7F7;
+  --cor-preto: #000000;
+  /* --cor-fundo: linear-gradient(290deg, var(--cor-principal) 0%, var(--cor-secundaria) 70%); */
+  --cor-fundo: linear-gradient(to bottom, var(--cor-secundaria) 70%, var(--cor-principal));
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: var(--cor-fonte);
+  display: grid;
+  place-items: center; /* se quiser deixar bem ao centro use place-content */
+  text-align: center;
+}
+
+main {
+  display: grid;
+  
+}
+
+h1 {
+  font-family: var(--fonte-titulo);
+  font-size: 5.2rem;
+}
+
+p, label, button, a {
+  font-family: var(--fonte-texto);
+  font-size: 2rem;
+}
+
+h1, p, label, a {
+  text-shadow: 2px 1px black;
+}
+
+form {
+  display: grid;
+  padding: 4.5rem 20rem .7rem;
+}
+
+label {
+  text-align: left;
+}
+
+input, button {
+  height: 4rem;
+  border-radius: 8px;
+  border: none;
+}
+
+#login-input {
+  margin-bottom: 1.8rem;
+}
+
+#login-input, #senha {
+  padding: 0 1rem;
+}
+
+button {
+  margin-top: 4.5rem;
+  font-weight: 600;
+}
+
+button:hover {
+  animation: backGradient 1s forwards;
+  scale: 1.02;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-fonte);
+}
+
+@keyframes backGradient {
+  0% {
+    background: linear-gradient(110deg, #3F72AF 0%, #112D4E 100%);
+  }
+  
+  5% {
+    background: linear-gradient(126deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  10% {
+    background: linear-gradient(148deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  15% {
+    background: linear-gradient(163deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  20% {
+    background: linear-gradient(180deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  25% {
+    background: linear-gradient(198deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  30% {
+    background: linear-gradient(211deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  35% {
+    background: linear-gradient(235deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  40% {
+    background: linear-gradient(266deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  45% {
+    background: linear-gradient(289deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  50% {
+    background: linear-gradient(311deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  55% {
+    background: linear-gradient(333deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  60%{
+    background: linear-gradient(354deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  65%{
+    background: linear-gradient(5deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  70% {
+    background: linear-gradient(19deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  80% {
+    background: linear-gradient(33deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  90% {
+    background: linear-gradient(68deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  95% {
+    background: linear-gradient(90deg, #3F72AF 0%, #112D4E 100%);
+  }
+
+  100% {
+    background: #173e6b;
+  }
+}

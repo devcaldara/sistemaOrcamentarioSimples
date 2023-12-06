@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  background: var(--cor-fundo);
+
+  --fonte-titulo: "Lato", sans-serif;
+  --fonte-texto: "Kalam", cursive;
+  
+  --cor-principal: #112D4E;
+  --cor-secundaria: #3F72AF;
+  --cor-terciaria: #DBE2EF;
+  --cor-fonte: #F9F7F7;
+  --cor-preto: #000000;
+  /* --cor-fundo: linear-gradient(290deg, var(--cor-principal) 0%, var(--cor-secundaria) 70%); */
+  --cor-fundo: linear-gradient(to bottom, var(--cor-secundaria) 70%, var(--cor-principal));
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+header {
+  height: 100vh;
+  background: var(--cor-principal);
+  text-align: center;
+  padding-top: 6rem;
+  border: 3px solid;
+  width: 23vw;
+}
+
+header img, h3 {
+  padding: 0 4.5rem;
+}
+
+h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-fonte);
+  font-size: 2.4rem;
+  margin: 5.5rem 0 2rem;
+}
+
+hr {
+  border: 1.8px solid var(--cor-fonte);
+  margin: 0 3rem 8rem;
+}
+
+.menu {
+  display: grid;
+  gap: 3rem;
+}
+
+.menu a {
+  font-family: var(--fonte-texto);
+  color: var(--cor-fonte);
+  text-decoration: none;
+  font-size: 2.4rem;
+}
+
+.menu a:hover {
+  scale: 1.1;
+  transition: .3s;
+}
+
+main {
+  text-align: center;
+  padding: 6rem 1rem;
+  width: 77vw;
+}
+
+main h1 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-fonte);
+  font-size: 3rem;
+  margin-bottom: 7rem;
+}
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 100%;
+}
+
+table tr:nth-child(odd) {
+  background: var(--cor-terciaria);
+}
+
+table tr:nth-child(even) {
+  background: var(--cor-fonte);
+}
+
+th {
+  font-family: var(--fonte-titulo);
+  font-size: 1.8rem;
+  color: var(--cor-fonte);
+  background: var(--cor-principal);
+  text-shadow: 1px 1px black;
+  height: 3.2rem;
+}
+
+td {
+  font-family: var(--fonte-texto);
+  font-size: 1.8rem;
+  height: 5.5rem;
+}
+
+td button, .acoes button {
+  font-family: var(--fonte-texto);
+  font-size: 1.5rem;
+  padding: .3rem 3rem;
+  margin: 1rem 0;
+  border: .5px solid var(--cor-principal);
+  border-radius: 10px;
+}
+
+td button:hover {
+  animation: backGradient2 1s forwards;
+  scale: 1.02;
+}
+
+.acoes button:hover {
+  animation: backGradient 1s forwards;
+  scale: 1.02;
+}
+
+.acoes {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-top: 2.5rem;
+}
+
+  @keyframes backGradient {
+    0% {
+      background: linear-gradient(110deg, #3F72AF 0%, #112D4E 100%);
+    }
+    
+    5% {
+      background: linear-gradient(126deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    10% {
+      background: linear-gradient(148deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    15% {
+      background: linear-gradient(163deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    20% {
+      background: linear-gradient(180deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    25% {
+      background: linear-gradient(198deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    30% {
+      background: linear-gradient(211deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    35% {
+      background: linear-gradient(235deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    40% {
+      background: linear-gradient(266deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    45% {
+      background: linear-gradient(289deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    50% {
+      background: linear-gradient(311deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    55% {
+      background: linear-gradient(333deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    60%{
+      background: linear-gradient(354deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    65%{
+      background: linear-gradient(5deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    70% {
+      background: linear-gradient(19deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    80% {
+      background: linear-gradient(33deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    90% {
+      background: linear-gradient(68deg, #3F72AF 0%, #112D4E 100%);
+    }
+  
+    95% {
+      background: linear-gradient(90deg, #3F72AF 0%, #112D4E 100%);
+    }
+
+    100% {
+      background: #173e6b;
+    }
+  }
+  
+  @keyframes backGradient2 {
+    0% {
+      background: linear-gradient(110deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+    
+    5% {
+      background: linear-gradient(126deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    10% {
+      background: linear-gradient(148deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    15% {
+      background: linear-gradient(163deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    20% {
+      background: linear-gradient(180deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    25% {
+      background: linear-gradient(198deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    30% {
+      background: linear-gradient(211deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    35% {
+      background: linear-gradient(235deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    40% {
+      background: linear-gradient(266deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    45% {
+      background: linear-gradient(289deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    50% {
+      background: linear-gradient(311deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    55% {
+      background: linear-gradient(333deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    60%{
+      background: linear-gradient(354deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    65%{
+      background: linear-gradient(5deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    70% {
+      background: linear-gradient(19deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    80% {
+      background: linear-gradient(33deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    90% {
+      background: linear-gradient(68deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+  
+    95% {
+      background: linear-gradient(90deg, #3F72AF 0%, #DBE2EF 100%);
+    }
+
+    100% {
+      background: #3F72AF;
+    }
+  }

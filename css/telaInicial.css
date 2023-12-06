@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  background: var(--cor-fundo);  
+
+  --fonte-titulo: "Lato", sans-serif;
+  --fonte-texto: "Kalam", cursive;
+  
+  --cor-principal: #112D4E;
+  --cor-secundaria: #3F72AF;
+  --cor-tercearia: #DBE2EF;
+  --cor-fonte: #F9F7F7;
+  --cor-preto: #000000;
+  /* --cor-fundo: linear-gradient(290deg, var(--cor-principal) 0%, var(--cor-secundaria) 70%); */
+  --cor-fundo: linear-gradient(to bottom, var(--cor-secundaria) 70%, var(--cor-principal));
+}
+
+body {
+  text-align: center;
+}
+
+main {
+  background: var(--cor-principal);
+  padding: 5rem 4.5rem;
+  margin: 5rem 30rem;
+  border-radius: 8px;
+}
+
+h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-fonte);
+  font-size: 2.4rem;
+  margin: 5.5rem 0 2rem;
+}
+
+hr {
+  border: 1.8px solid var(--cor-fonte);
+  margin: 0 3rem 4rem;
+}
+
+.menu {
+  display: grid;
+  gap: 3rem;
+}
+
+.menu a {
+  font-family: var(--fonte-texto);
+  color: var(--cor-fonte);
+  text-decoration: none;
+  font-size: 2.4rem;
+}
+
+.menu a:hover {
+  scale: 1.1;
+  transition: .3s;
+}
+
+main h1 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-fonte);
+  font-size: 3rem;
+  margin-bottom: 7rem;
+}

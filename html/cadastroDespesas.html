@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senhor Finanças</title>
+  
+    <link rel="shortcut icon" href="/assets/logo.jpg" type="image/x-jpg">
+    <link rel="stylesheet" href="/css/cadastroReceita.css">
+    <script src="../JS/despesa.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="./telaInicial.html"><img src="/assets/logo.jpg" alt="logomarca senhor finanças"></a> 
+      <h3>Gerenciador financeiro</h3>
+      <hr>
+      <div class="menu">
+        <a href="/html/receitas.html">Receitas</a>
+        <a href="/html/despesas.html">Despesas</a>
+        <a href="/html/relatorios.html">Relatórios</a>
+      </div>
+    </header>
+  
+    <main>
+      <h1>Cadastro de Despesas</h1>
+    
+      <form action="" id="cadastroDespesa">      
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" minlength="3" required>
+      
+        <label for="valor">Valor:</label>
+        <input type="number" name="" id="valor" step=".01" required>
+        
+        <label for="dataVencimento">Data de Vencimento:</label>
+        <input type="date" name="dataVencimento" id="dataVencimento" required>
+
+        <label for="dataPagamento">Data de Pagamento:</label>
+        <input type="date" name="dataPagamento" id="dataPagamento">
+      
+      </form>
+    
+      <button type="submit" form="cadastroDespesa" id="cadastrar">Cadastrar</button>
+    </main>
+  
+  </body>
+</html>
