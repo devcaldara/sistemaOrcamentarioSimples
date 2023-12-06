@@ -6,7 +6,7 @@ usuario = JSON.parse(usuario);
 
 form.addEventListener('submit', (evento) => {
   evento.preventDefault();
-  if(receita.idReceita != undefined){
+  if(receita != null){
       editarReceita();
   } else {
       cadastrarReceita();
